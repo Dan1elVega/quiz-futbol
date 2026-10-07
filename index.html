@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Escudo | Torneo de Fuerza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Adivina el Escudo</h1>
+            <div id="score-display">Ki: <span id="current-score">0</span>/10</div>
+        </header>
+
+        <main id="quiz-container">
+            <div id="question-header">Batalla <span id="question-number">1</span> de 10</div>
+            
+            <div class="image-container">
+                <img id="team-crest" src="" alt="Escudo del equipo" class="mystery-mode">
+            </div>
+
+            <div id="options-grid" class="options-container">
+                <!-- Los botones se inyectan desde JS -->
+            </div>
+        </main>
+
+        <section id="result-container" class="hidden">
+            <h2>Nivel de Poder Final</h2>
+            <div class="final-score">Acertaste <span id="final-score-number">0</span> de 10</div>
+            <div id="coach-message" class="insult-box"></div>
+            <button id="restart-btn" onclick="location.reload()">Entrenar de nuevo</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
